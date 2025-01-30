@@ -112,7 +112,19 @@ Celery is installed as Python package listed in the requirements.txt. Open anoth
 celery -A core worker -l info
 ```
 
-### 10. Run the development server
+### 10. Install Redis docker image
+
+Product recommendation engine utilizes Redis, a fast in-memory storage. We will use the Redis docker image.
+
+```bash
+docker pull redis:7.4.2
+docker run -it --rm --name redis -p 6379:6379 redis:7.4.2
+# Server initialized
+# * Ready to accept connections
+```
+Keep the Redis server running.
+
+### 11. Run the development server
 
 Start the development server to verify everything is working correctly.
 ```bash
