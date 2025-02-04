@@ -124,6 +124,15 @@ docker run -it --rm --name redis -p 6379:6379 redis:7.4.2
 ```
 Keep the Redis server running.
 
+### 11. Install gettext for internationalization and localization
+
+We are providing two languages in this application: English and Spanish. To make this possible we need [gettext](https://www.gnu.org/software/gettext/) toolkit. Find the relevant installation way to install based on your OS on the internet.
+
+Once gettext is installed, run this command to apply the translations.
+```bash
+django-admin makemessages --all
+```
+
 ### 11. Run the development server
 
 Start the development server to verify everything is working correctly.
