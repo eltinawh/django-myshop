@@ -130,7 +130,7 @@ We are providing two languages in this application: English and Spanish. To make
 
 Once gettext is installed, run this command to apply the translations.
 ```bash
-django-admin makemessages --all
+django-admin compilemessages
 ```
 
 ### 11. Run the development server
